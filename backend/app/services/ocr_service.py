@@ -1,4 +1,4 @@
-"""Text extraction from PDFs and images. Native-first, smart OCR fallback."""
+﻿"""Text extraction from PDFs and images. Native-first, smart OCR fallback."""
 import io
 import re
 import shutil
@@ -19,12 +19,20 @@ class PageText(NamedTuple):
 
 
 def _configure_tesseract() -> None:
+    """Find Tesseract on this system (works on Windows dev + Linux prod)."""
     if shutil.which("tesseract"):
         return
     common_paths = [
+        # Windows dev
         r"C:\Program Files\Tesseract-OCR\tesseract.exe",
         r"C:\Program Files (x86)\Tesseract-OCR\tesseract.exe",
         str(Path.home() / "AppData/Local/Tesseract-OCR/tesseract.exe"),
+        # Linux production (Docker / Render)
+        "/usr/bin/tesseract",
+        "/usr/local/bin/tesseract",
+        # macOS
+        "/opt/homebrew/bin/tesseract",
+        "/usr/local/bin/tesseract",
     ]
     for p in common_paths:
         if Path(p).exists():
@@ -81,6 +89,33 @@ def _ocr_image_object(img: Image.Image) -> str:
         return ""
 
 
+def _resolve_poppler_path() -> str | None:
+    """Find Poppler on this system (works on Windows dev + Linux prod)."""
+    from app.core.config import settings
+
+    # 1. Prefer explicit env var
+    if settings.POPPLER_PATH and Path(settings.POPPLER_PATH).exists():
+        return settings.POPPLER_PATH
+
+    # 2. Try common Linux/macOS locations
+    for p in ("/usr/bin", "/usr/local/bin", "/opt/homebrew/bin", "/opt/local/bin"):
+        if Path(p).exists() and (Path(p) / "pdftoppm").exists():
+            return p
+
+    # 3. Try Windows winget location
+    win_candidates = list(
+        Path.home().glob(
+            "AppData/Local/Microsoft/WinGet/Packages/*Poppler*/**/Library/bin"
+        )
+    )
+    for p in win_candidates:
+        if (p / "pdftoppm.exe").exists():
+            return str(p)
+
+    # 4. Rely on PATH (return None → pdf2image will search PATH itself)
+    return None
+
+
 def _ocr_pdf(file_bytes: bytes) -> tuple[list[PageText], bool]:
     """Convert PDF pages to images and OCR each page."""
     if not _tesseract_available():
@@ -88,14 +123,17 @@ def _ocr_pdf(file_bytes: bytes) -> tuple[list[PageText], bool]:
         return [], True
 
     try:
-        from app.core.config import settings
         kwargs = {"dpi": 300}
-        if settings.POPPLER_PATH:
-            kwargs["poppler_path"] = settings.POPPLER_PATH
-            logger.info("Using POPPLER_PATH=%s", settings.POPPLER_PATH)
+        poppler = _resolve_poppler_path()
+        if poppler:
+            kwargs["poppler_path"] = poppler
+            logger.info("Using Poppler at %s", poppler)
+        else:
+            logger.info("Using Poppler from PATH (no explicit poppler_path set).")
+
         images = convert_from_bytes(file_bytes, **kwargs)
     except Exception as e:
-        logger.exception("PDF-to-image conversion failed (is Poppler on PATH?) | error=%s", e)
+        logger.exception("PDF-to-image conversion failed (is Poppler installed?) | error=%s", e)
         return [], True
 
     pages: list[PageText] = []
@@ -134,7 +172,7 @@ def extract_text_from_pdf(file_bytes: bytes) -> tuple[list[PageText], bool]:
         return native_pages, False
 
     # Fallback: OCR
-    logger.info("Native text insufficient — falling back to OCR.")
+    logger.info("Native text insufficient - falling back to OCR.")
     ocr_pages, ocr_used = _ocr_pdf(file_bytes)
 
     # If OCR returned content, prefer it. Otherwise fall back to native (may help).
