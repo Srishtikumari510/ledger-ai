@@ -1,0 +1,270 @@
+{
+  "document_name": "Consolidated Balance Sheet 2026.pdf",
+  "document_type": "balance_sheet",
+  "processing_status": "FAILED",
+  "overall_confidence": null,
+  "file_validation": {
+    "file_type": "application/pdf",
+    "is_supported": true,
+    "is_readable": true,
+    "page_count": 1,
+    "status": "PASS",
+    "error_code": null,
+    "error_message": null
+  },
+  "extracted_data": {
+    "periods": [
+      "March 31, 2026",
+      "March 31, 2025"
+    ],
+    "currency": {
+      "value": "INR",
+      "page_number": 1,
+      "evidence": "(@ in crore)"
+    },
+    "entity_name": {
+      "value": "HDFC Bank Limited",
+      "page_number": 1,
+      "evidence": "HDFC Bank Limited"
+    },
+    "statement_date": {
+      "value": "March 31, 2026",
+      "page_number": 1,
+      "evidence": "As at March 31, 2026"
+    },
+    "total_assets": {
+      "value": 4908040.84,
+      "page_number": 1,
+      "evidence": "Total 4,908,040.84"
+    },
+    "total_liabilities": {
+      "value": 4908040.84,
+      "page_number": 1,
+      "evidence": "Total 4,908,040.84"
+    },
+    "total_equity": {
+      "value": 0,
+      "page_number": 1,
+      "evidence": "Total Capital and Liabilities reported without separate equity subtotal"
+    },
+    "line_items": [
+      {
+        "label": "Capital",
+        "values": {
+          "March 31, 2026": 1539.34,
+          "March 31, 2025": 765.22
+        }
+      },
+      {
+        "label": "Employees stock options / units outstanding",
+        "values": {
+          "March 31, 2026": 4545.11,
+          "March 31, 2025": 3805.19
+        }
+      },
+      {
+        "label": "Reserves and surplus",
+        "values": {
+          "March 31, 2026": 579975.02,
+          "March 31, 2025": 517218.98
+        }
+      },
+      {
+        "label": "Minority interest",
+        "values": {
+          "March 31, 2026": 22384.96,
+          "March 31, 2025": 16359.04
+        }
+      },
+      {
+        "label": "Deposits",
+        "values": {
+          "March 31, 2026": 3099638.29,
+          "March 31, 2025": 2710898.23
+        }
+      },
+      {
+        "label": "Borrowings",
+        "values": {
+          "March 31, 2026": 588484.55,
+          "March 31, 2025": 634605.57
+        }
+      },
+      {
+        "label": "Other liabilities and provisions",
+        "values": {
+          "March 31, 2026": 252977.53,
+          "March 31, 2025": 188163.66
+        }
+      },
+      {
+        "label": "Policyholders' funds",
+        "values": {
+          "March 31, 2026": 358496.04,
+          "March 31, 2025": 320601.53
+        }
+      },
+      {
+        "label": "Total Capital and Liabilities",
+        "values": {
+          "March 31, 2026": 4908040.84,
+          "March 31, 2025": 4392417.42
+        }
+      },
+      {
+        "label": "Cash and balances with Reserve Bank of India",
+        "values": {
+          "March 31, 2026": 200707.11,
+          "March 31, 2025": 144390.25
+        }
+      },
+      {
+        "label": "Balances with banks and money at call and short notice",
+        "values": {
+          "March 31, 2026": 111218.94,
+          "March 31, 2025": 105557.65
+        }
+      },
+      {
+        "label": "Investments",
+        "values": {
+          "March 31, 2026": 1280216.29,
+          "March 31, 2025": 1186472.89
+        }
+      },
+      {
+        "label": "Advances",
+        "values": {
+          "March 31, 2026": 3050783.23,
+          "March 31, 2025": 2724938.16
+        }
+      },
+      {
+        "label": "Fixed assets",
+        "values": {
+          "March 31, 2026": 16491.59,
+          "March 31, 2025": 15257.94
+        }
+      },
+      {
+        "label": "Other assets",
+        "values": {
+          "March 31, 2026": 248623.68,
+          "March 31, 2025": 215800.53
+        }
+      },
+      {
+        "label": "Total Assets",
+        "values": {
+          "March 31, 2026": 4908040.84,
+          "March 31, 2025": 4392417.42
+        }
+      },
+      {
+        "label": "Contingent liabilities",
+        "values": {
+          "March 31, 2026": 3479487.31,
+          "March 31, 2025": 2709921.85
+        }
+      },
+      {
+        "label": "Bills for collection",
+        "values": {
+          "March 31, 2026": 82470.05,
+          "March 31, 2025": 70679.55
+        }
+      }
+    ]
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "balance_sheet_equation [March 31, 2026]",
+        "formula": "total_liabilities + total_equity",
+        "operands": {
+          "total_liabilities": 4908040.84,
+          "total_equity": 0.0
+        },
+        "calculated_value": 4908040.84,
+        "reported_value": 4908040.84,
+        "variance": 0.0,
+        "status": "PASS",
+        "message": null
+      },
+      {
+        "name": "balance_sheet_equation [March 31, 2025]",
+        "formula": "total_liabilities + total_equity",
+        "operands": {
+          "total_liabilities": 4908040.84,
+          "total_equity": 0.0
+        },
+        "calculated_value": 4908040.84,
+        "reported_value": 4908040.84,
+        "variance": 0.0,
+        "status": "PASS",
+        "message": null
+      },
+      {
+        "name": "bs_liab_components [March 31, 2026]",
+        "formula": "sum(liability line items)",
+        "operands": {
+          "component_sum": 4908040.84
+        },
+        "calculated_value": 4908040.84,
+        "reported_value": 4908040.84,
+        "variance": 0.0,
+        "status": "PASS",
+        "message": null
+      },
+      {
+        "name": "bs_asset_components [March 31, 2026]",
+        "formula": "sum(asset line items)",
+        "operands": {
+          "component_sum": 8469998.2
+        },
+        "calculated_value": 8469998.2,
+        "reported_value": 4908040.84,
+        "variance": 3561957.36,
+        "status": "FAILED",
+        "message": null
+      },
+      {
+        "name": "bs_liab_components [March 31, 2025]",
+        "formula": "sum(liability line items)",
+        "operands": {
+          "component_sum": 4392417.42
+        },
+        "calculated_value": 4392417.42,
+        "reported_value": 4392417.42,
+        "variance": 0.0,
+        "status": "PASS",
+        "message": null
+      },
+      {
+        "name": "bs_asset_components [March 31, 2025]",
+        "formula": "sum(asset line items)",
+        "operands": {
+          "component_sum": 7173018.82
+        },
+        "calculated_value": 7173018.82,
+        "reported_value": 4392417.42,
+        "variance": 2780601.4,
+        "status": "FAILED",
+        "message": null
+      }
+    ],
+    "overall_status": "FAILED",
+    "issues": [
+      "bs_asset_components [March 31, 2026]: FAILED",
+      "bs_asset_components [March 31, 2025]: FAILED"
+    ]
+  },
+  "processing_metadata": {
+    "ocr_used": true,
+    "llm_used": true,
+    "processed_at": "2026-09-11T11:15:08.369550+00:00",
+    "processing_time_ms": 30980,
+    "llm_provider": "gemini",
+    "llm_model": "gemini-3.6-flash"
+  }
+}

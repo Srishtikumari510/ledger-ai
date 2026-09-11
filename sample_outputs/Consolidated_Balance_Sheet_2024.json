@@ -1,0 +1,191 @@
+{
+  "document_name": "Consolidated Balance Sheet 2024.pdf",
+  "document_type": "balance_sheet",
+  "processing_status": "PASS",
+  "overall_confidence": null,
+  "file_validation": {
+    "file_type": "application/pdf",
+    "is_supported": true,
+    "is_readable": true,
+    "page_count": 1,
+    "status": "PASS",
+    "error_code": null,
+    "error_message": null
+  },
+  "extracted_data": {
+    "periods": [
+      "March 31, 2024",
+      "March 31, 2023"
+    ],
+    "currency": {
+      "value": "crore",
+      "page_number": 1,
+      "evidence": "= in crore"
+    },
+    "entity_name": {
+      "value": "DFC Bank Limited",
+      "page_number": 1,
+      "evidence": "416 DFC Bank Limited"
+    },
+    "statement_date": {
+      "value": "March 31, 2024",
+      "page_number": 1,
+      "evidence": "As at March 31, 2024"
+    },
+    "total_assets": {
+      "value": 4030194.26,
+      "page_number": 1,
+      "evidence": "Total 4,030,194.26 2,530,432.44"
+    },
+    "total_liabilities": null,
+    "total_equity": null,
+    "line_items": [
+      {
+        "label": "Capital",
+        "values": {
+          "March 31, 2024": 759.69,
+          "March 31, 2023": 557.97
+        }
+      },
+      {
+        "label": "Employees stock options outstanding",
+        "values": {
+          "March 31, 2024": 2652.72,
+          "March 31, 2023": 1117.2
+        }
+      },
+      {
+        "label": "Reserves and surplus",
+        "values": {
+          "March 31, 2024": 452982.84,
+          "March 31, 2023": 287762.33
+        }
+      },
+      {
+        "label": "Minority interest",
+        "values": {
+          "March 31, 2024": 13383.4,
+          "March 31, 2023": 860.26
+        }
+      },
+      {
+        "label": "Deposits",
+        "values": {
+          "March 31, 2024": 2376887.28,
+          "March 31, 2023": 1882663.25
+        }
+      },
+      {
+        "label": "Borrowings",
+        "values": {
+          "March 31, 2024": 730615.46,
+          "March 31, 2023": 256548.66
+        }
+      },
+      {
+        "label": "Other liabilities and provisions",
+        "values": {
+          "March 31, 2024": 174832.07,
+          "March 31, 2023": 100922.77
+        }
+      },
+      {
+        "label": "Policyholders' funds",
+        "values": {
+          "March 31, 2024": 278080.8,
+          "March 31, 2023": null
+        }
+      },
+      {
+        "label": "Total Capital and Liabilities",
+        "values": {
+          "March 31, 2024": 4030194.26,
+          "March 31, 2023": 2530432.44
+        }
+      },
+      {
+        "label": "Cash and balances with Reserve Bank of India",
+        "values": {
+          "March 31, 2024": 178718.67,
+          "March 31, 2023": 117189.28
+        }
+      },
+      {
+        "label": "Balances with banks and money at call and short notice",
+        "values": {
+          "March 31, 2024": 50115.84,
+          "March 31, 2023": 79958.53
+        }
+      },
+      {
+        "label": "Investments",
+        "values": {
+          "March 31, 2024": 1005681.63,
+          "March 31, 2023": 511581.74
+        }
+      },
+      {
+        "label": "Advances",
+        "values": {
+          "March 31, 2024": 2565891.41,
+          "March 31, 2023": 1661949.29
+        }
+      },
+      {
+        "label": "Fixed assets",
+        "values": {
+          "March 31, 2024": 12603.76,
+          "March 31, 2023": 8282.56
+        }
+      },
+      {
+        "label": "Other assets",
+        "values": {
+          "March 31, 2024": 217182.95,
+          "March 31, 2023": 151322.28
+        }
+      },
+      {
+        "label": "Goodwill on Consolidation",
+        "values": {
+          "March 31, 2024": null,
+          "March 31, 2023": 148.79
+        }
+      },
+      {
+        "label": "Total Assets",
+        "values": {
+          "March 31, 2024": 4030194.26,
+          "March 31, 2023": 2530432.44
+        }
+      },
+      {
+        "label": "Contingent liabilities",
+        "values": {
+          "March 31, 2024": 2344487.73,
+          "March 31, 2023": 1750953.81
+        }
+      },
+      {
+        "label": "Bills for collection",
+        "values": {
+          "March 31, 2024": 65332.87,
+          "March 31, 2023": 71439.54
+        }
+      }
+    ]
+  },
+  "validation": {
+    "checks": [],
+    "overall_status": "NOT_APPLICABLE",
+    "issues": []
+  },
+  "processing_metadata": {
+    "ocr_used": true,
+    "llm_used": true,
+    "processed_at": "2026-09-11T07:12:38.951496+00:00",
+    "processing_time_ms": 21231,
+    "llm_provider": "gemini",
+    "llm_model": "gemini-3.6-flash"
+  }
+}

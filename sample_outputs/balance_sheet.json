@@ -1,0 +1,256 @@
+{
+  "document_name": "Consolidated Balance Sheet 2019.pdf",
+  "document_type": "balance_sheet",
+  "processing_status": "FAILED",
+  "overall_confidence": null,
+  "file_validation": {
+    "file_type": "application/pdf",
+    "is_supported": true,
+    "is_readable": true,
+    "page_count": 1,
+    "status": "PASS",
+    "error_code": null,
+    "error_message": null
+  },
+  "extracted_data": {
+    "periods": [
+      "31-Mar-19",
+      "31-Mar-18"
+    ],
+    "currency": {
+      "value": "in '000",
+      "page_number": 1,
+      "evidence": "= in \u2018000"
+    },
+    "entity_name": {
+      "value": "HDFC Bank Limited",
+      "page_number": 1,
+      "evidence": "HDFC Bank Limited Annual Report 2018 - 2019"
+    },
+    "statement_date": {
+      "value": "2019-03-31",
+      "page_number": 1,
+      "evidence": "As at March 31, 2019"
+    },
+    "total_assets": {
+      "value": 12928057065,
+      "page_number": 1,
+      "evidence": "Total 12,928,057,065 11,031,861,695"
+    },
+    "total_liabilities": {
+      "value": 12928057065,
+      "page_number": 1,
+      "evidence": "Total 12,928,057,065 11,031,861,695"
+    },
+    "total_equity": {
+      "value": 0,
+      "page_number": 1,
+      "evidence": "Total 12,928,057,065 11,031,861,695"
+    },
+    "line_items": [
+      {
+        "label": "Capital",
+        "values": {
+          "31-Mar-19": 5446613,
+          "31-Mar-18": 5190181
+        }
+      },
+      {
+        "label": "Reserves and surplus",
+        "values": {
+          "31-Mar-19": 1531279982,
+          "31-Mar-18": 1090801062
+        }
+      },
+      {
+        "label": "Minority interest",
+        "values": {
+          "31-Mar-19": 5017945,
+          "31-Mar-18": 3563322
+        }
+      },
+      {
+        "label": "Deposits",
+        "values": {
+          "31-Mar-19": 9225026779,
+          "31-Mar-18": 7883751419
+        }
+      },
+      {
+        "label": "Borrowings",
+        "values": {
+          "31-Mar-19": 1577327790,
+          "31-Mar-18": 1564420848
+        }
+      },
+      {
+        "label": "Other liabilities and provisions",
+        "values": {
+          "31-Mar-19": 583957956,
+          "31-Mar-18": 484134863
+        }
+      },
+      {
+        "label": "Total Capital and Liabilities",
+        "values": {
+          "31-Mar-19": 12928057065,
+          "31-Mar-18": 11031861695
+        }
+      },
+      {
+        "label": "Cash and balances with Reserve Bank of India",
+        "values": {
+          "31-Mar-19": 468045896,
+          "31-Mar-18": 1046882074
+        }
+      },
+      {
+        "label": "Balances with banks and money at call and short notice",
+        "values": {
+          "31-Mar-19": 350130527,
+          "31-Mar-18": 183733488
+        }
+      },
+      {
+        "label": "Investments",
+        "values": {
+          "31-Mar-19": 2869176781,
+          "31-Mar-18": 2384609240
+        }
+      },
+      {
+        "label": "Advances",
+        "values": {
+          "31-Mar-19": 8692226631,
+          "31-Mar-18": 7000338363
+        }
+      },
+      {
+        "label": "Fixed assets",
+        "values": {
+          "31-Mar-19": 42198371,
+          "31-Mar-18": 38105583
+        }
+      },
+      {
+        "label": "Other assets",
+        "values": {
+          "31-Mar-19": 506278859,
+          "31-Mar-18": 378192947
+        }
+      },
+      {
+        "label": "Total Assets",
+        "values": {
+          "31-Mar-19": 12928057065,
+          "31-Mar-18": 11031861695
+        }
+      },
+      {
+        "label": "Contingent liabilities",
+        "values": {
+          "31-Mar-19": 10251253094,
+          "31-Mar-18": 8757769674
+        }
+      },
+      {
+        "label": "Bills for collection",
+        "values": {
+          "31-Mar-19": 499528010,
+          "31-Mar-18": 427538250
+        }
+      }
+    ]
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "balance_sheet_equation [31-Mar-19]",
+        "formula": "total_liabilities + total_equity",
+        "operands": {
+          "total_liabilities": 12928057065.0,
+          "total_equity": 0.0
+        },
+        "calculated_value": 12928057065.0,
+        "reported_value": 12928057065.0,
+        "variance": 0.0,
+        "status": "PASS",
+        "message": null
+      },
+      {
+        "name": "balance_sheet_equation [31-Mar-18]",
+        "formula": "total_liabilities + total_equity",
+        "operands": {
+          "total_liabilities": 12928057065.0,
+          "total_equity": 0.0
+        },
+        "calculated_value": 12928057065.0,
+        "reported_value": 12928057065.0,
+        "variance": 0.0,
+        "status": "PASS",
+        "message": null
+      },
+      {
+        "name": "bs_liab_components [31-Mar-19]",
+        "formula": "sum(liability line items)",
+        "operands": {
+          "component_sum": 12928057065.0
+        },
+        "calculated_value": 12928057065.0,
+        "reported_value": 12928057065.0,
+        "variance": 0.0,
+        "status": "PASS",
+        "message": null
+      },
+      {
+        "name": "bs_asset_components [31-Mar-19]",
+        "formula": "sum(asset line items)",
+        "operands": {
+          "component_sum": 23678838169.0
+        },
+        "calculated_value": 23678838169.0,
+        "reported_value": 12928057065.0,
+        "variance": 10750781104.0,
+        "status": "FAILED",
+        "message": null
+      },
+      {
+        "name": "bs_liab_components [31-Mar-18]",
+        "formula": "sum(liability line items)",
+        "operands": {
+          "component_sum": 11031861695.0
+        },
+        "calculated_value": 11031861695.0,
+        "reported_value": 11031861695.0,
+        "variance": 0.0,
+        "status": "PASS",
+        "message": null
+      },
+      {
+        "name": "bs_asset_components [31-Mar-18]",
+        "formula": "sum(asset line items)",
+        "operands": {
+          "component_sum": 20217169619.0
+        },
+        "calculated_value": 20217169619.0,
+        "reported_value": 11031861695.0,
+        "variance": 9185307924.0,
+        "status": "FAILED",
+        "message": null
+      }
+    ],
+    "overall_status": "FAILED",
+    "issues": [
+      "bs_asset_components [31-Mar-19]: FAILED",
+      "bs_asset_components [31-Mar-18]: FAILED"
+    ]
+  },
+  "processing_metadata": {
+    "ocr_used": true,
+    "llm_used": true,
+    "processed_at": "2026-09-11T11:21:09.456038+00:00",
+    "processing_time_ms": 34695,
+    "llm_provider": "gemini",
+    "llm_model": "gemini-3.6-flash"
+  }
+}

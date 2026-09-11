@@ -1,0 +1,231 @@
+{
+  "document_name": "Consolidated Profit & Loss 2025.pdf",
+  "document_type": "profit_and_loss",
+  "processing_status": "PASS",
+  "overall_confidence": null,
+  "file_validation": {
+    "file_type": "application/pdf",
+    "is_supported": true,
+    "is_readable": true,
+    "page_count": 1,
+    "status": "PASS",
+    "error_code": null,
+    "error_message": null
+  },
+  "extracted_data": {
+    "periods": {
+      "value": [
+        "March 31, 2025",
+        "March 31, 2024"
+      ],
+      "page_number": 1,
+      "evidence": "March 31, 2025 March 31, 2024"
+    },
+    "currency": {
+      "value": "INR",
+      "page_number": 1,
+      "evidence": "C in crore"
+    },
+    "entity_name": null,
+    "statement_date": {
+      "value": "March 31, 2025",
+      "page_number": 1,
+      "evidence": "For the year ended March 31, 2025"
+    },
+    "revenue": {
+      "value": 470915.93,
+      "page_number": 1,
+      "evidence": "Total 470,915.93"
+    },
+    "cost_of_sales": null,
+    "gross_profit": null,
+    "operating_expenses": {
+      "value": 176605.07,
+      "page_number": 1,
+      "evidence": "Operating expenses 16 176,605.07"
+    },
+    "operating_profit": null,
+    "tax": null,
+    "net_profit": {
+      "value": 70792.25,
+      "page_number": 1,
+      "evidence": "Consolidated Net Profit for the year attributable to the group 70,792.25"
+    },
+    "line_items": [
+      {
+        "label": "Interest earned",
+        "values": {
+          "March 31, 2025": 336367.43,
+          "March 31, 2024": 283649.02
+        }
+      },
+      {
+        "label": "Other income",
+        "values": {
+          "March 31, 2025": 134548.5,
+          "March 31, 2024": 124345.75
+        }
+      },
+      {
+        "label": "Total Income",
+        "values": {
+          "March 31, 2025": 470915.93,
+          "March 31, 2024": 407994.77
+        }
+      },
+      {
+        "label": "Interest expended",
+        "values": {
+          "March 31, 2025": 183894.2,
+          "March 31, 2024": 154138.55
+        }
+      },
+      {
+        "label": "Operating expenses",
+        "values": {
+          "March 31, 2025": 176605.07,
+          "March 31, 2024": 152269.34
+        }
+      },
+      {
+        "label": "Provisions and contingencies",
+        "values": {
+          "March 31, 2025": 36976.49,
+          "March 31, 2024": 36140.38
+        }
+      },
+      {
+        "label": "Total Expenditure",
+        "values": {
+          "March 31, 2025": 397475.76,
+          "March 31, 2024": 342548.27
+        }
+      },
+      {
+        "label": "Consolidated Net Profit for the year before Minority Interest",
+        "values": {
+          "March 31, 2025": 73440.17,
+          "March 31, 2024": 65446.5
+        }
+      },
+      {
+        "label": "Less : Minority Interest",
+        "values": {
+          "March 31, 2025": 2647.92,
+          "March 31, 2024": 1384.46
+        }
+      },
+      {
+        "label": "Consolidated Net Profit for the year attributable to the group",
+        "values": {
+          "March 31, 2025": 70792.25,
+          "March 31, 2024": 64062.04
+        }
+      },
+      {
+        "label": "Brought forward consolidated profit attributable to the group",
+        "values": {
+          "March 31, 2025": 150045.57,
+          "March 31, 2024": 120369.35
+        }
+      },
+      {
+        "label": "Addition on amalgamation (net)",
+        "values": {
+          "March 31, 2025": null,
+          "March 31, 2024": 3570.1
+        }
+      },
+      {
+        "label": "Transfer to Statutory Reserve",
+        "values": {
+          "March 31, 2025": 17260.3,
+          "March 31, 2024": 15684.72
+        }
+      },
+      {
+        "label": "Transfer to General Reserve",
+        "values": {
+          "March 31, 2025": 6734.74,
+          "March 31, 2024": 6081.23
+        }
+      },
+      {
+        "label": "Transfer to Special Reserve",
+        "values": {
+          "March 31, 2025": 3200.0,
+          "March 31, 2024": 3000.0
+        }
+      },
+      {
+        "label": "Transfer to Capital Reserve",
+        "values": {
+          "March 31, 2025": 507.0,
+          "March 31, 2024": 4166.41
+        }
+      },
+      {
+        "label": "Transfer to / (from) Investment Reserve Account (net)",
+        "values": {
+          "March 31, 2025": null,
+          "March 31, 2024": 529.42
+        }
+      },
+      {
+        "label": "Transfer to / (from) Investment Fluctuation Reserve",
+        "values": {
+          "March 31, 2025": null,
+          "March 31, 2024": 378.0
+        }
+      },
+      {
+        "label": "Dividend pertaining to previous year paid during the year",
+        "values": {
+          "March 31, 2025": 14826.19,
+          "March 31, 2024": 8404.42
+        }
+      },
+      {
+        "label": "Transfer to / (from) Minority Interest (opening adjustment)",
+        "values": {
+          "March 31, 2025": -382.96,
+          "March 31, 2024": -288.28
+        }
+      },
+      {
+        "label": "Balance carried over to consolidated balance sheet",
+        "values": {
+          "March 31, 2025": 178692.55,
+          "March 31, 2024": 150045.57
+        }
+      },
+      {
+        "label": "Basic Earnings Per Share",
+        "values": {
+          "March 31, 2025": 92.81,
+          "March 31, 2024": 90.42
+        }
+      },
+      {
+        "label": "Diluted Earnings Per Share",
+        "values": {
+          "March 31, 2025": 92.39,
+          "March 31, 2024": 90.01
+        }
+      }
+    ]
+  },
+  "validation": {
+    "checks": [],
+    "overall_status": "NOT_APPLICABLE",
+    "issues": []
+  },
+  "processing_metadata": {
+    "ocr_used": true,
+    "llm_used": true,
+    "processed_at": "2026-09-11T08:12:26.114577+00:00",
+    "processing_time_ms": 23189,
+    "llm_provider": "gemini",
+    "llm_model": "gemini-3.6-flash"
+  }
+}

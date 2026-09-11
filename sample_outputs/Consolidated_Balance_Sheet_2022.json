@@ -1,0 +1,211 @@
+{
+  "document_name": "Consolidated Balance Sheet 2022.pdf",
+  "document_type": "balance_sheet",
+  "processing_status": "FAILED",
+  "overall_confidence": null,
+  "file_validation": {
+    "file_type": "application/pdf",
+    "is_supported": true,
+    "is_readable": true,
+    "page_count": 1,
+    "status": "PASS",
+    "error_code": null,
+    "error_message": null
+  },
+  "extracted_data": {
+    "periods": [
+      "March 31, 2022",
+      "March 31, 2021"
+    ],
+    "currency": {
+      "value": "INR",
+      "page_number": 1,
+      "evidence": "Fin crore"
+    },
+    "entity_name": null,
+    "statement_date": {
+      "value": "March 31, 2022",
+      "page_number": 1,
+      "evidence": "March 31, 2022"
+    },
+    "total_assets": {
+      "value": 2122934.3,
+      "page_number": 1,
+      "evidence": "2,122,934.30 1,799,506.63"
+    },
+    "total_liabilities": {
+      "value": 2122934.3,
+      "page_number": 1,
+      "evidence": "2,122,934.30 1,799,506.63"
+    },
+    "total_equity": {
+      "value": 0,
+      "page_number": 1,
+      "evidence": "CAPITAL AND LIABILITIES"
+    },
+    "line_items": [
+      {
+        "label": "Reserves and surplus",
+        "values": {
+          "March 31, 2022": 246771.62,
+          "March 31, 2021": 209258.9
+        }
+      },
+      {
+        "label": "Deposits / Other Liabilities",
+        "values": {
+          "March 31, 2022": 1558003.03,
+          "March 31, 2021": 1333720.0
+        }
+      },
+      {
+        "label": "Borrowings",
+        "values": {
+          "March 31, 2022": 226966.5,
+          "March 31, 2021": 177696.75
+        }
+      },
+      {
+        "label": "Other liabilities and provisions",
+        "values": {
+          "March 31, 2022": 89918.19,
+          "March 31, 2021": 77646.07
+        }
+      },
+      {
+        "label": "Total Capital and Liabilities",
+        "values": {
+          "March 31, 2022": 2122934.3,
+          "March 31, 2021": 1799506.63
+        }
+      },
+      {
+        "label": "Balances with banks and money at call and short notice",
+        "values": {
+          "March 31, 2022": 25355.02,
+          "March 31, 2021": 93902.16
+        }
+      },
+      {
+        "label": "Investments",
+        "values": {
+          "March 31, 2022": 449263.86,
+          "March 31, 2021": null
+        }
+      },
+      {
+        "label": "Advances",
+        "values": {
+          "March 31, 2022": 1420942.28,
+          "March 31, 2021": null
+        }
+      },
+      {
+        "label": "Fixed Assets / Other Assets",
+        "values": {
+          "March 31, 2022": 90910.36,
+          "March 31, 2021": null
+        }
+      },
+      {
+        "label": "Capital",
+        "values": {
+          "March 31, 2022": 148.79,
+          "March 31, 2021": 148.79
+        }
+      },
+      {
+        "label": "Total Assets",
+        "values": {
+          "March 31, 2022": 2122934.3,
+          "March 31, 2021": 1799506.63
+        }
+      },
+      {
+        "label": "Contingent liabilities",
+        "values": {
+          "March 31, 2022": 1400197.64,
+          "March 31, 2021": 975280.66
+        }
+      }
+    ]
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "balance_sheet_equation",
+        "formula": "total_liabilities + total_equity",
+        "operands": {
+          "total_liabilities": 2122934.3,
+          "total_equity": 0.0
+        },
+        "calculated_value": 2122934.3,
+        "reported_value": 2122934.3,
+        "variance": 0.0,
+        "status": "PASS",
+        "message": null
+      },
+      {
+        "name": "bs_liab_components_March 31, 2022",
+        "formula": "sum(liability line items) [March 31, 2022]",
+        "operands": {
+          "component_sum": 2121659.34
+        },
+        "calculated_value": 2121659.34,
+        "reported_value": 2122934.3,
+        "variance": -1274.96,
+        "status": "PASS",
+        "message": null
+      },
+      {
+        "name": "bs_asset_components_March 31, 2022",
+        "formula": "sum(asset line items) [March 31, 2022]",
+        "operands": {
+          "component_sum": 3386817.95
+        },
+        "calculated_value": 3386817.95,
+        "reported_value": 2122934.3,
+        "variance": 1263883.65,
+        "status": "FAILED",
+        "message": null
+      },
+      {
+        "name": "bs_liab_components_March 31, 2021",
+        "formula": "sum(liability line items) [March 31, 2021]",
+        "operands": {
+          "component_sum": 1798321.72
+        },
+        "calculated_value": 1798321.72,
+        "reported_value": 1799506.63,
+        "variance": -1184.91,
+        "status": "PASS",
+        "message": null
+      },
+      {
+        "name": "bs_asset_components_March 31, 2021",
+        "formula": "sum(asset line items) [March 31, 2021]",
+        "operands": {
+          "component_sum": 1069331.61
+        },
+        "calculated_value": 1069331.61,
+        "reported_value": 1799506.63,
+        "variance": -730175.02,
+        "status": "FAILED",
+        "message": null
+      }
+    ],
+    "overall_status": "FAILED",
+    "issues": [
+      "bs_asset_components_March 31, 2022: FAILED",
+      "bs_asset_components_March 31, 2021: FAILED"
+    ]
+  },
+  "processing_metadata": {
+    "ocr_used": true,
+    "llm_used": true,
+    "processed_at": "2026-09-11T07:33:15.758140+00:00",
+    "processing_time_ms": 24402,
+    "llm_provider": "gemini",
+    "llm_model": "gemini-3.6-flash"
+  }
+}

@@ -1,0 +1,351 @@
+{
+  "document_name": "Consolidated Cash Flow Statement 2025.pdf",
+  "document_type": "cash_flow_statement",
+  "processing_status": "PASS",
+  "overall_confidence": null,
+  "file_validation": {
+    "file_type": "application/pdf",
+    "is_supported": true,
+    "is_readable": true,
+    "page_count": 2,
+    "status": "PASS",
+    "error_code": null,
+    "error_message": null
+  },
+  "extracted_data": {
+    "periods": [
+      "March 31, 2025",
+      "March 31, 2024"
+    ],
+    "currency": {
+      "value": "INR",
+      "page_number": 1,
+      "evidence": "= in crore"
+    },
+    "entity_name": {
+      "value": "DFC Bank Limited",
+      "page_number": 1,
+      "evidence": "448 DFC Bank Limited"
+    },
+    "statement_date": {
+      "value": "2025-03-31",
+      "page_number": 1,
+      "evidence": "March 31, 2025"
+    },
+    "operating_cash_flow": {
+      "value": {
+        "March 31, 2025": 127241.84,
+        "March 31, 2024": 19069.34
+      },
+      "page_number": 1,
+      "evidence": "Net cash flows from operating activities 127,241.84 19,069.34"
+    },
+    "investing_cash_flow": {
+      "value": {
+        "March 31, 2025": -3850.64,
+        "March 31, 2024": 5313.77
+      },
+      "page_number": 1,
+      "evidence": "Net cash flow from / (used in) investing activities (3,850.64) 5,313.77"
+    },
+    "financing_cash_flow": {
+      "value": {
+        "March 31, 2025": -102477.54,
+        "March 31, 2024": -3983.06
+      },
+      "page_number": 2,
+      "evidence": "Net cash flow used in financing activities (102,477.54) (3,983.06)"
+    },
+    "opening_cash": {
+      "value": {
+        "March 31, 2025": 228834.51,
+        "March 31, 2024": 197147.81
+      },
+      "page_number": 2,
+      "evidence": "Cash and cash equivalents at the beginning of the year 228,834.51 197,147.81"
+    },
+    "net_change_in_cash": {
+      "value": {
+        "March 31, 2025": 21113.39,
+        "March 31, 2024": 20504.99
+      },
+      "page_number": 2,
+      "evidence": "Net increase in cash and cash equivalents 21,113.39 20,504.99"
+    },
+    "closing_cash": {
+      "value": {
+        "March 31, 2025": 249947.9,
+        "March 31, 2024": 228834.51
+      },
+      "page_number": 2,
+      "evidence": "249,947.90 228,834.51"
+    },
+    "line_items": [
+      {
+        "label": "Consolidated profit before income tax and after minority interest",
+        "values": {
+          "March 31, 2025": 93594.13,
+          "March 31, 2024": 75184.14
+        }
+      },
+      {
+        "label": "Depreciation on fixed assets",
+        "values": {
+          "March 31, 2025": 3805.23,
+          "March 31, 2024": 3092.08
+        }
+      },
+      {
+        "label": "Profit / loss on revaluation of investments",
+        "values": {
+          "March 31, 2025": 3909.1,
+          "March 31, 2024": -6957.14
+        }
+      },
+      {
+        "label": "Amortisation of premium on investments",
+        "values": {
+          "March 31, 2025": 87.07,
+          "March 31, 2024": 966.09
+        }
+      },
+      {
+        "label": "Profit on sale of fixed assets",
+        "values": {
+          "March 31, 2025": -22.03,
+          "March 31, 2024": -75.36
+        }
+      },
+      {
+        "label": "Profit / loss on sale of investment in subsidiary",
+        "values": {
+          "March 31, 2025": 8.0,
+          "March 31, 2024": -7341.42
+        }
+      },
+      {
+        "label": "Provision / charge for non performing assets",
+        "values": {
+          "March 31, 2025": 15385.24,
+          "March 31, 2024": 12540.05
+        }
+      },
+      {
+        "label": "Floating provisions",
+        "values": {
+          "March 31, 2025": null,
+          "March 31, 2024": 10900.0
+        }
+      },
+      {
+        "label": "Provision / (write-back) for standard assets and contingencies",
+        "values": {
+          "March 31, 2025": -1210.63,
+          "March 31, 2024": 1578.23
+        }
+      },
+      {
+        "label": "Employee stock options / units expense",
+        "values": {
+          "March 31, 2025": 2086.05,
+          "March 31, 2024": 1731.73
+        }
+      },
+      {
+        "label": "Increase in investments",
+        "values": {
+          "March 31, 2025": -180362.67,
+          "March 31, 2024": -88411.63
+        }
+      },
+      {
+        "label": "Increase in advances",
+        "values": {
+          "March 31, 2025": -169918.22,
+          "March 31, 2024": -312488.37
+        }
+      },
+      {
+        "label": "Increase in deposits",
+        "values": {
+          "March 31, 2025": 334010.95,
+          "March 31, 2024": 836964.81
+        }
+      },
+      {
+        "label": "Increase in other assets",
+        "values": {
+          "March 31, 2025": -10829.67,
+          "March 31, 2024": -27919.59
+        }
+      },
+      {
+        "label": "Increase in other liabilities and provisions",
+        "values": {
+          "March 31, 2025": 13117.98,
+          "March 31, 2024": 6420.4
+        }
+      },
+      {
+        "label": "Increase in policyholders\u2019 funds",
+        "values": {
+          "March 31, 2025": 43289.99,
+          "March 31, 2024": 35728.16
+        }
+      },
+      {
+        "label": "Direct taxes paid (net of refunds)",
+        "values": {
+          "March 31, 2025": -19708.68,
+          "March 31, 2024": -22842.84
+        }
+      },
+      {
+        "label": "Net cash flows from operating activities",
+        "values": {
+          "March 31, 2025": 127241.84,
+          "March 31, 2024": 19069.34
+        }
+      },
+      {
+        "label": "Purchase of fixed assets",
+        "values": {
+          "March 31, 2025": -4075.89,
+          "March 31, 2024": -4286.72
+        }
+      },
+      {
+        "label": "Proceeds from sale of fixed assets",
+        "values": {
+          "March 31, 2025": 100.72,
+          "March 31, 2024": 99.82
+        }
+      },
+      {
+        "label": "Proceeds from sale of investment in subsidiary (net)",
+        "values": {
+          "March 31, 2025": 192.0,
+          "March 31, 2024": 9500.67
+        }
+      },
+      {
+        "label": "Investment in subsidiaries",
+        "values": {
+          "March 31, 2025": -67.47,
+          "March 31, 2024": null
+        }
+      },
+      {
+        "label": "Net cash flow from / (used in) investing activities",
+        "values": {
+          "March 31, 2025": -3850.64,
+          "March 31, 2024": 5313.77
+        }
+      },
+      {
+        "label": "Increase in minority interest",
+        "values": {
+          "March 31, 2025": 2382.88,
+          "March 31, 2024": 1201.66
+        }
+      },
+      {
+        "label": "Proceeds from exercise of convertible equity warrants",
+        "values": {
+          "March 31, 2025": null,
+          "March 31, 2024": 3192.81
+        }
+      },
+      {
+        "label": "Proceeds from issue of share capital other than warrants",
+        "values": {
+          "March 31, 2025": 6346.5,
+          "March 31, 2024": 5249.73
+        }
+      },
+      {
+        "label": "Proceeds from issue of Tier 1 and Tier 2 capital instruments",
+        "values": {
+          "March 31, 2025": 1182.0,
+          "March 31, 2024": 2350.0
+        }
+      },
+      {
+        "label": "Redemption of Tier 1 and Tier 2 capital instruments",
+        "values": {
+          "March 31, 2025": -500.0,
+          "March 31, 2024": -230.0
+        }
+      },
+      {
+        "label": "Decrease in other borrowings",
+        "values": {
+          "March 31, 2025": -97062.73,
+          "March 31, 2024": -7342.84
+        }
+      },
+      {
+        "label": "Dividend paid during the year",
+        "values": {
+          "March 31, 2025": -14826.19,
+          "March 31, 2024": -8404.42
+        }
+      },
+      {
+        "label": "Net cash flow used in financing activities",
+        "values": {
+          "March 31, 2025": -102477.54,
+          "March 31, 2024": -3983.06
+        }
+      },
+      {
+        "label": "Effect of fluctuation in foreign currency translation reserve",
+        "values": {
+          "March 31, 2025": 199.73,
+          "March 31, 2024": 104.94
+        }
+      },
+      {
+        "label": "Net increase in cash and cash equivalents",
+        "values": {
+          "March 31, 2025": 21113.39,
+          "March 31, 2024": 20504.99
+        }
+      },
+      {
+        "label": "Cash and cash equivalents at the beginning of the year",
+        "values": {
+          "March 31, 2025": 228834.51,
+          "March 31, 2024": 197147.81
+        }
+      },
+      {
+        "label": "Cash and cash equivalents acquired on amalgamation",
+        "values": {
+          "March 31, 2025": null,
+          "March 31, 2024": 11181.71
+        }
+      },
+      {
+        "label": "Cash and cash equivalents at the end of the year",
+        "values": {
+          "March 31, 2025": 249947.9,
+          "March 31, 2024": 228834.51
+        }
+      }
+    ]
+  },
+  "validation": {
+    "checks": [],
+    "overall_status": "NOT_APPLICABLE",
+    "issues": []
+  },
+  "processing_metadata": {
+    "ocr_used": true,
+    "llm_used": true,
+    "processed_at": "2026-09-11T08:06:43.715167+00:00",
+    "processing_time_ms": 65194,
+    "llm_provider": "gemini",
+    "llm_model": "gemini-3.6-flash"
+  }
+}

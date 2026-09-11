@@ -1,0 +1,161 @@
+{
+  "document_name": "Document 4.pdf",
+  "document_type": "invoice",
+  "processing_status": "PASS",
+  "overall_confidence": null,
+  "file_validation": {
+    "file_type": "application/pdf",
+    "is_supported": true,
+    "is_readable": true,
+    "page_count": 1,
+    "status": "PASS",
+    "error_code": null,
+    "error_message": null
+  },
+  "extracted_data": {
+    "invoice_number": {
+      "value": "INV-2026-0042",
+      "page_number": 1,
+      "evidence": "Invoice Number: INV-2026-0042"
+    },
+    "invoice_date": {
+      "value": "2026-09-11",
+      "page_number": 1,
+      "evidence": "Invoice Date: 2026-09-11"
+    },
+    "vendor_name": {
+      "value": "Acme Supplies Pvt Ltd",
+      "page_number": 1,
+      "evidence": "Vendor Name: Acme Supplies Pvt Ltd"
+    },
+    "customer_name": {
+      "value": "Global Traders Inc",
+      "page_number": 1,
+      "evidence": "Customer Name: Global Traders Inc"
+    },
+    "currency": {
+      "value": "USD",
+      "page_number": 1,
+      "evidence": "Currency: USD"
+    },
+    "subtotal": {
+      "value": 2530.0,
+      "page_number": 1,
+      "evidence": "Subtotal: 2530.00"
+    },
+    "tax_amount": {
+      "value": 253.0,
+      "page_number": 1,
+      "evidence": "Tax (10%): 253.00"
+    },
+    "discount": {
+      "value": 0.0,
+      "page_number": 1,
+      "evidence": "Discount: 0.00"
+    },
+    "total_amount": {
+      "value": 2783.0,
+      "page_number": 1,
+      "evidence": "Total Amount Due: 2783.00"
+    },
+    "line_items": [
+      {
+        "description": "Office Chair",
+        "quantity": 5,
+        "unit_price": 120.0,
+        "amount": 600.0
+      },
+      {
+        "description": "Standing Desk",
+        "quantity": 3,
+        "unit_price": 350.0,
+        "amount": 1050.0
+      },
+      {
+        "description": "Monitor 27 inch",
+        "quantity": 4,
+        "unit_price": 220.0,
+        "amount": 880.0
+      }
+    ]
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "invoice_total_check",
+        "formula": "subtotal + tax_amount - discount",
+        "operands": {
+          "subtotal": 2530.0,
+          "tax_amount": 253.0,
+          "discount": 0.0
+        },
+        "calculated_value": 2783.0,
+        "reported_value": 2783.0,
+        "variance": 0.0,
+        "status": "PASS",
+        "message": null
+      },
+      {
+        "name": "line_item_1_check",
+        "formula": "quantity * unit_price",
+        "operands": {
+          "quantity": 5.0,
+          "unit_price": 120.0
+        },
+        "calculated_value": 600.0,
+        "reported_value": 600.0,
+        "variance": 0.0,
+        "status": "PASS",
+        "message": null
+      },
+      {
+        "name": "line_item_2_check",
+        "formula": "quantity * unit_price",
+        "operands": {
+          "quantity": 3.0,
+          "unit_price": 350.0
+        },
+        "calculated_value": 1050.0,
+        "reported_value": 1050.0,
+        "variance": 0.0,
+        "status": "PASS",
+        "message": null
+      },
+      {
+        "name": "line_item_3_check",
+        "formula": "quantity * unit_price",
+        "operands": {
+          "quantity": 4.0,
+          "unit_price": 220.0
+        },
+        "calculated_value": 880.0,
+        "reported_value": 880.0,
+        "variance": 0.0,
+        "status": "PASS",
+        "message": null
+      },
+      {
+        "name": "line_items_sum_to_subtotal",
+        "formula": "sum(line_items.amount)",
+        "operands": {
+          "line_items_total": 2530.0
+        },
+        "calculated_value": 2530.0,
+        "reported_value": 2530.0,
+        "variance": 0.0,
+        "status": "PASS",
+        "message": null
+      }
+    ],
+    "overall_status": "PASS",
+    "issues": []
+  },
+  "processing_metadata": {
+    "ocr_used": false,
+    "llm_used": true,
+    "processed_at": "2026-09-11T06:29:19.107455+00:00",
+    "processing_time_ms": 9321,
+    "llm_provider": "gemini",
+    "llm_model": "gemini-3.6-flash"
+  }
+}

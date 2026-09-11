@@ -1,0 +1,15 @@
+{
+  "_note": "Documented failure case — the file was a corrupted/blank scan with no readable text at the OCR layer. The pipeline handled it gracefully instead of crashing.",
+  "error": {
+    "code": "NO_TEXT_EXTRACTED",
+    "message": "No readable text found in document."
+  },
+  "file_validation": {
+    "file_type": "application/pdf",
+    "is_supported": true,
+    "is_readable": true,
+    "page_count": 1,
+    "status": "PASS"
+  },
+  "processing_status": "FAILED"
+}

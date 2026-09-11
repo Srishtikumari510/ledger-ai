@@ -74,6 +74,10 @@ a reliable, structured, testable, and deployable application.
 
 \## 2. Architecture
 
+
+
+!\[Architecture](docs/architecture.svg)
+
 ┌─────────────────────┐
 
 │ Browser / API │
