@@ -1,0 +1,92 @@
+﻿* { box-sizing: border-box; }
+body {
+  font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+  margin: 0; padding: 0;
+  background: #f4f6f9;
+  color: #1f2937;
+  line-height: 1.5;
+}
+header {
+  background: #1e3a8a;
+  color: #fff;
+  padding: 24px 32px;
+}
+header h1 { margin: 0; font-size: 22px; }
+header .subtitle { margin: 4px 0 0; opacity: .85; font-size: 14px; }
+header a { color: #bfdbfe; text-decoration: none; }
+header a:hover { text-decoration: underline; }
+main {
+  max-width: 1080px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.06);
+}
+.card h2 { margin-top: 0; font-size: 16px; color: #1e3a8a; }
+.row { margin-bottom: 14px; }
+.row label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 6px; }
+.row input, .row select {
+  width: 100%; padding: 8px 10px;
+  border: 1px solid #cbd5e1; border-radius: 6px; font-size: 14px;
+}
+button {
+  background: #2563eb; color: #fff;
+  border: none; padding: 10px 18px;
+  border-radius: 6px; font-size: 14px; cursor: pointer;
+}
+button:hover { background: #1d4ed8; }
+button.secondary {
+  background: #e2e8f0; color: #1f2937;
+}
+button.secondary:hover { background: #cbd5e1; }
+.status-msg { margin-top: 12px; font-size: 14px; min-height: 20px; }
+.status-msg.error { color: #b91c1c; }
+.status-msg.success { color: #047857; }
+table {
+  width: 100%; border-collapse: collapse; font-size: 14px;
+}
+table th, table td {
+  text-align: left; padding: 10px 8px;
+  border-bottom: 1px solid #e5e7eb;
+}
+table th { font-weight: 600; color: #475569; background: #f8fafc; }
+table td.empty { text-align: center; color: #94a3b8; padding: 24px; }
+.badge {
+  display: inline-block; padding: 2px 10px;
+  border-radius: 12px; font-size: 12px; font-weight: 600;
+}
+.badge.PASS { background: #d1fae5; color: #065f46; }
+.badge.FAILED { background: #fee2e2; color: #991b1b; }
+.badge.NOT_APPLICABLE { background: #e5e7eb; color: #475569; }
+.meta-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 8px 24px;
+  font-size: 14px;
+}
+.meta-grid .label { color: #64748b; }
+.kv-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.kv-table td { padding: 8px 6px; border-bottom: 1px solid #f1f5f9; vertical-align: top; }
+.kv-table td.k { width: 30%; font-weight: 600; color: #334155; }
+.kv-table td.v { word-break: break-word; }
+.kv-table td.v.missing { color: #b45309; font-style: italic; }
+.check {
+  border-left: 4px solid #cbd5e1;
+  padding: 10px 14px; margin-bottom: 10px;
+  background: #f8fafc; border-radius: 4px;
+}
+.check.PASS { border-left-color: #10b981; }
+.check.FAILED { border-left-color: #ef4444; }
+.check.NOT_APPLICABLE { border-left-color: #94a3b8; }
+.check .name { font-weight: 600; }
+.check .formula { font-family: monospace; color: #475569; font-size: 13px; }
+.check .nums { font-size: 13px; color: #334155; margin-top: 4px; }
+pre {
+  background: #0f172a; color: #e2e8f0;
+  padding: 16px; border-radius: 6px; overflow-x: auto;
+  font-size: 12px; line-height: 1.5;
+}
+.hidden { display: none; }

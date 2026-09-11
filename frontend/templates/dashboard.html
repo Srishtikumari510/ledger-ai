@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Document Intelligence - Dashboard</title>
+  <link rel="stylesheet" href="/static/css/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Document Intelligence</h1>
+    <p class="subtitle">Upload financial documents for AI-powered extraction &amp; validation</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Process a Document</h2>
+      <form id="uploadForm">
+        <div class="row">
+          <label for="documentType">Document Type</label>
+          <select id="documentType" name="document_type" required>
+            <option value="invoice">Invoice</option>
+            <option value="balance_sheet">Balance Sheet</option>
+            <option value="profit_and_loss">Profit &amp; Loss</option>
+            <option value="cash_flow_statement">Cash Flow Statement</option>
+          </select>
+        </div>
+        <div class="row">
+          <label for="fileInput">File (PDF / JPG / PNG, max 3 pages)</label>
+          <input type="file" id="fileInput" name="file" accept=".pdf,.jpg,.jpeg,.png" required />
+        </div>
+        <button type="submit" id="processBtn">Process</button>
+      </form>
+      <div id="statusMsg" class="status-msg"></div>
+    </section>
+
+    <section class="card">
+      <h2>Processed Documents</h2>
+      <button id="refreshBtn" class="secondary">Refresh</button>
+      <table id="docsTable">
+        <thead>
+          <tr>
+            <th>Document Name</th>
+            <th>Type</th>
+            <th>Status</th>
+            <th>Processed At</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="docsBody">
+          <tr><td colspan="5" class="empty">Loading...</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="/static/js/dashboard.js"></script>
+</body>
+</html>
