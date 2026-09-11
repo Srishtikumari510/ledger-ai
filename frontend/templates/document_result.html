@@ -1,53 +1,74 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Result - Document Intelligence</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document Result Â· LedgerAI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/landing.css" />
   <link rel="stylesheet" href="/static/css/styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Document Result</h1>
-    <p class="subtitle"><a href="/">â† Back to Dashboard</a></p>
-  </header>
 
-  <main>
-    <section class="card">
-      <h2 id="docTitle">Loading...</h2>
-      <div id="metaBlock" class="meta-grid"></div>
-    </section>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="brand">
+      <span class="brand-mark">&#9670;</span>
+      <span class="brand-name">LedgerAI</span>
+    </a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/dashboard">Dashboard</a>
+      <a href="/docs" target="_blank">API Docs</a>
+    </div>
+    <a href="/dashboard" class="nav-cta">&larr; Dashboard</a>
+  </div>
+</nav>
 
-    <section class="card">
-      <h2>File Validation</h2>
-      <div id="fileValidation"></div>
-    </section>
+<main class="app-main">
+  <div class="app-header">
+    <h1 id="docTitle">Loading...</h1>
+    <p id="docSubtitle">Processed document result</p>
+  </div>
 
-    <section class="card">
-      <h2>Extracted Fields</h2>
-      <div id="extractedFields"></div>
-    </section>
+  <section class="app-card">
+    <h2>Summary</h2>
+    <div id="metaBlock" class="meta-grid"></div>
+  </section>
 
-    <section class="card">
-      <h2>Line Items / Tables</h2>
-      <div id="lineItems"></div>
-    </section>
+  <section class="app-card">
+    <h2>File Validation</h2>
+    <div id="fileValidation"></div>
+  </section>
 
-    <section class="card">
-      <h2>Financial Validations</h2>
-      <div id="validationBlock"></div>
-    </section>
+  <section class="app-card">
+    <h2>Extracted Fields</h2>
+    <div id="extractedFields"></div>
+  </section>
 
-    <section class="card">
-      <h2>Processing Metadata</h2>
-      <div id="metadataBlock"></div>
-    </section>
+  <section class="app-card">
+    <h2>Line Items / Tables</h2>
+    <div id="lineItems"></div>
+  </section>
 
-    <section class="card">
-      <button id="toggleRaw" class="secondary">Show Raw JSON</button>
-      <pre id="rawJson" class="hidden"></pre>
-    </section>
-  </main>
+  <section class="app-card">
+    <h2>Financial Validations</h2>
+    <div id="validationBlock"></div>
+  </section>
 
-  <script src="/static/js/result.js"></script>
+  <section class="app-card">
+    <h2>Processing Metadata</h2>
+    <div id="metadataBlock"></div>
+  </section>
+
+  <section class="app-card">
+    <button id="toggleRaw" class="btn-secondary-app">Show Raw JSON</button>
+    <pre id="rawJson" class="hidden"></pre>
+  </section>
+</main>
+
+<script src="/static/js/result.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-﻿const API_BASE = "";
+const API_BASE = "";
 const pathParts = window.location.pathname.split("/");
 const documentName = decodeURIComponent(pathParts[pathParts.length - 1]);
 
@@ -73,7 +73,7 @@ function renderExtracted(extracted) {
     const page = (v && typeof v === "object" && v.page_number) ? ` <small>(p.${v.page_number})</small>` : "";
     return `<tr>
       <td class="k">${escapeHtml(k)}${page}</td>
-      <td class="v ${isNull ? "missing" : ""}">${isNull ? "â€” missing â€”" : escapeHtml(typeof value === "object" ? JSON.stringify(value) : value)}</td>
+      <td class="v ${isNull ? "missing" : ""}">${isNull ? "N/A" : escapeHtml(typeof value === "object" ? JSON.stringify(value) : value)}</td>
     </tr>`;
   }).join("") || "<tr><td class='empty'>No scalar fields</td></tr>";
 
@@ -116,9 +116,9 @@ function renderValidation(validation) {
         <div class="name">${escapeHtml(c.name)} <span class="badge ${c.status}">${c.status}</span></div>
         <div class="formula">${escapeHtml(c.formula)}</div>
         <div class="nums">
-          calculated: <strong>${c.calculated_value ?? "â€”"}</strong> |
-          reported: <strong>${c.reported_value ?? "â€”"}</strong> |
-          variance: <strong>${c.variance ?? "â€”"}</strong>
+          calculated: <strong>${c.calculated_value ?? "N/A"}</strong> |
+          reported: <strong>${c.reported_value ?? "N/A"}</strong> |
+          variance: <strong>${c.variance ?? "N/A"}</strong>
         </div>
       </div>
     `).join("")}
@@ -131,8 +131,8 @@ function renderMetadata(meta) {
     <table class="kv-table">
       <tr><td class="k">OCR used</td><td class="v">${meta.ocr_used}</td></tr>
       <tr><td class="k">LLM used</td><td class="v">${meta.llm_used}</td></tr>
-      <tr><td class="k">Provider</td><td class="v">${escapeHtml(meta.llm_provider || "â€”")}</td></tr>
-      <tr><td class="k">Model</td><td class="v">${escapeHtml(meta.llm_model || "â€”")}</td></tr>
+      <tr><td class="k">Provider</td><td class="v">${escapeHtml(meta.llm_provider || "N/A")}</td></tr>
+      <tr><td class="k">Model</td><td class="v">${escapeHtml(meta.llm_model || "N/A")}</td></tr>
       <tr><td class="k">Processing time</td><td class="v">${meta.processing_time_ms} ms</td></tr>
     </table>
   `;

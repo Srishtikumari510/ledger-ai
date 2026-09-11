@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LedgerAI — Turn Complex Documents Into Structured Intelligence</title>
+  <meta name="description" content="LedgerAI builds enterprise AI that extracts, validates, and operationalizes financial documents at scale." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/landing.css" />
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="/" class="brand">
+      <span class="brand-mark">◆</span>
+      <span class="brand-name">LedgerAI</span>
+    </a>
+    <div class="nav-links">
+      <a href="#solutions">Solutions</a>
+      <a href="#platform">Platform</a>
+      <a href="#how">How it Works</a>
+      <a href="#cases">Case Studies</a>
+      <a href="#tech">Technology</a>
+      <a href="/docs" target="_blank">API Docs</a>
+    </div>
+    <a href="/dashboard" class="nav-cta">Launch Dashboard →</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <svg class="hero-svg" viewBox="0 0 1440 800" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+          <path d="M 48 0 L 0 0 0 48" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+        </pattern>
+        <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+          <stop offset="0%" stop-color="#10b981" stop-opacity="0.18"/>
+          <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#grid)"/>
+      <ellipse cx="720" cy="400" rx="600" ry="380" fill="url(#glow)"/>
+      <g class="nodes" stroke="rgba(16,185,129,0.5)" stroke-width="1" fill="#10b981">
+        <line x1="200" y1="200" x2="420" y2="320"/>
+        <line x1="420" y1="320" x2="640" y2="240"/>
+        <line x1="640" y1="240" x2="880" y2="380"/>
+        <line x1="880" y1="380" x2="1140" y2="300"/>
+        <line x1="1140" y1="300" x2="1280" y2="480"/>
+        <line x1="420" y1="320" x2="500" y2="560"/>
+        <line x1="500" y1="560" x2="760" y2="640"/>
+        <line x1="760" y1="640" x2="1000" y2="560"/>
+        <line x1="1000" y1="560" x2="1280" y2="480"/>
+        <circle cx="200" cy="200" r="3"/>
+        <circle cx="420" cy="320" r="4"/>
+        <circle cx="640" cy="240" r="3"/>
+        <circle cx="880" cy="380" r="4"/>
+        <circle cx="1140" cy="300" r="3"/>
+        <circle cx="1280" cy="480" r="4"/>
+        <circle cx="500" cy="560" r="3"/>
+        <circle cx="760" cy="640" r="4"/>
+        <circle cx="1000" cy="560" r="3"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="hero-inner">
+    <div class="hero-eyebrow reveal">
+      <span class="dot"></span> Enterprise Document Intelligence
+    </div>
+    <h1 class="hero-title reveal">
+      Turn Complex Documents<br/>Into <span class="accent">Structured Intelligence</span>
+    </h1>
+    <p class="hero-sub reveal">
+      Build, validate, and operationalize AI systems that transform enterprise documents into
+      measurable business outcomes — with accuracy you can audit.
+    </p>
+    <div class="hero-cta reveal">
+      <a href="#solutions" class="btn btn-primary">Explore the Platform</a>
+      <a href="/dashboard" class="btn btn-ghost">Launch Dashboard →</a>
+    </div>
+    <div class="hero-meta reveal">
+      <div>Audit-grade validation</div>
+      <div>·</div>
+      <div>Page-level evidence</div>
+      <div>·</div>
+      <div>Structured JSON APIs</div>
+    </div>
+  </div>
+</header>
+
+<section class="metrics">
+  <div class="container">
+    <div class="metrics-grid">
+      <div class="metric reveal">
+        <div class="metric-value" data-target="99.2" data-suffix="%">0%</div>
+        <div class="metric-label">Extraction Accuracy</div>
+      </div>
+      <div class="metric reveal">
+        <div class="metric-value" data-target="10" data-suffix="K+">0</div>
+        <div class="metric-label">Documents Processed</div>
+      </div>
+      <div class="metric reveal">
+        <div class="metric-value" data-target="60" data-suffix="%">0%</div>
+        <div class="metric-label">Faster Processing</div>
+      </div>
+      <div class="metric reveal">
+        <div class="metric-value" data-target="24" data-suffix="/7">0</div>
+        <div class="metric-label">Automated Validation</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="value" id="value">
+  <div class="container value-grid">
+    <div class="value-left reveal">
+      <div class="eyebrow">Intelligence that creates value</div>
+      <h2>From Raw Data to<br/>Reliable Intelligence</h2>
+    </div>
+    <div class="value-right reveal">
+      <p>
+        LedgerAI combines document AI, deterministic validation rules, structured APIs, and
+        audit-grade evidence to turn messy PDFs, scans, and images into production-grade data.
+        Every extracted value is traceable. Every financial relationship is checked. Every result
+        is served through clean REST endpoints.
+      </p>
+      <div class="flow">
+        <div class="flow-step"><span>01</span> DATA</div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step"><span>02</span> AI EXTRACTION</div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step"><span>03</span> VALIDATION</div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step"><span>04</span> STRUCTURED OUTPUT</div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step accent-step"><span>05</span> BUSINESS ACTION</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="solutions" id="solutions">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Solutions</div>
+      <h2>Built for Real-World Enterprise Challenges</h2>
+      <p>Six core capabilities that map directly to how finance and operations teams work.</p>
+    </div>
+    <div class="cards">
+      <article class="card reveal">
+        <div class="card-index">01</div>
+        <h3>Intelligent Document Processing</h3>
+        <p>Extract structured information from invoices, balance sheets, P&amp;L, and cash flow statements using AI with page-level evidence.</p>
+        <div class="card-arrow">→</div>
+      </article>
+      <article class="card reveal">
+        <div class="card-index">02</div>
+        <h3>AI Validation</h3>
+        <p>Every extracted value is checked against financial relationships and business rules — with traceable PASS / FAIL / NOT_APPLICABLE outcomes.</p>
+        <div class="card-arrow">→</div>
+      </article>
+      <article class="card reveal">
+        <div class="card-index">03</div>
+        <h3>Financial Intelligence</h3>
+        <p>Reconcile subtotals, taxes, assets, liabilities, cash flows, and profit line items automatically across comparative periods.</p>
+        <div class="card-arrow">→</div>
+      </article>
+      <article class="card reveal">
+        <div class="card-index">04</div>
+        <h3>AI APIs</h3>
+        <p>Expose every capability through consistent, documented REST APIs. Multipart upload, GET-by-name, list, and health endpoints out of the box.</p>
+        <div class="card-arrow">→</div>
+      </article>
+      <article class="card reveal">
+        <div class="card-index">05</div>
+        <h3>Analytics</h3>
+        <p>Turn extracted data into structured JSON, searchable dashboards, and machine-readable outputs ready for downstream systems.</p>
+        <div class="card-arrow">→</div>
+      </article>
+      <article class="card reveal">
+        <div class="card-index">06</div>
+        <h3>Automation</h3>
+        <p>Remove manual data entry from document-heavy workflows. Upload once, get validated structured output for every page.</p>
+        <div class="card-arrow">→</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="platform" id="platform">
+  <div class="container">
+    <div class="section-head light reveal">
+      <div class="eyebrow emerald">The Platform</div>
+      <h2>One Platform. Complete Intelligence Workflow.</h2>
+      <p>Upload, extract, validate, and retrieve — all through one unified service.</p>
+    </div>
+    <div class="showcase reveal">
+      <div class="showcase-left">
+        <div class="mock">
+          <div class="mock-header">
+            <div class="mock-dots"><span></span><span></span><span></span></div>
+            <div class="mock-title">LedgerAI · Processing</div>
+          </div>
+          <div class="mock-body">
+            <div class="mock-row"><span class="k">Document</span><span class="v">Invoice_2026.pdf</span></div>
+            <div class="mock-row"><span class="k">Status</span><span class="v ok">✓ Processed</span></div>
+            <div class="mock-row"><span class="k">Confidence</span><span class="v">97.8%</span></div>
+            <div class="mock-row"><span class="k">Validation</span><span class="v ok">✓ Passed</span></div>
+            <div class="mock-row"><span class="k">Fields Extracted</span><span class="v">42</span></div>
+            <div class="mock-row"><span class="k">OCR Used</span><span class="v">Yes</span></div>
+            <div class="mock-bar">
+              <div class="bar-label">Processing pipeline</div>
+              <div class="bar-track"><div class="bar-fill"></div></div>
+              <div class="bar-meta"><span>Validation</span><span>100%</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="showcase-right">
+        <div class="code-header">
+          <span>response.json</span>
+          <span class="code-status">200 OK</span>
+        </div>
+<pre class="code"><code>{
+  "document_name": "Invoice_2026.pdf",
+  "document_type": "invoice",
+  "processing_status": "PASS",
+  "extracted_data": {
+    "invoice_number": "INV-2026-0042",
+    "vendor_name": "Acme Supplies",
+    "currency": "USD",
+    "subtotal": 2530.00,
+    "tax_amount": 253.00,
+    "total_amount": 2783.00,
+    "line_items": [
+      { "description": "Office Chair",
+        "quantity": 5, "amount": 600.00 }
+    ]
+  },
+  "validation": {
+    "overall_status": "PASS",
+    "checks": [{
+      "name": "invoice_total_check",
+      "formula": "subtotal + tax - discount",
+      "calculated_value": 2783.00,
+      "reported_value": 2783.00,
+      "variance": 0.00,
+      "status": "PASS"
+    }]
+  }
+}</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="how" id="how">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">How it works</div>
+      <h2>Four Steps From Upload to Insight</h2>
+    </div>
+    <ol class="timeline">
+      <li class="timeline-step reveal">
+        <div class="step-num">01</div>
+        <h3>Upload</h3>
+        <p>Drop a PDF, JPG, or PNG through the dashboard or POST it to the REST API.</p>
+      </li>
+      <li class="timeline-step reveal">
+        <div class="step-num">02</div>
+        <h3>Extract</h3>
+        <p>OCR + LLM pipelines identify every meaningful field and table with page-level evidence.</p>
+      </li>
+      <li class="timeline-step reveal">
+        <div class="step-num">03</div>
+        <h3>Validate</h3>
+        <p>Financial relationships and business rules verify extracted values with explicit formulas.</p>
+      </li>
+      <li class="timeline-step reveal">
+        <div class="step-num">04</div>
+        <h3>Deliver</h3>
+        <p>Clean structured JSON is returned, persisted, and retrievable by document name.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="cases" id="cases">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Case Studies</div>
+      <h2>Designed for Production</h2>
+    </div>
+    <div class="case-grid">
+      <article class="case-card reveal">
+        <div class="case-tag">Financial Services</div>
+        <h3>Automating Complex Financial Document Processing</h3>
+        <p>Balance sheets and cash flow statements parsed into structured JSON with period-aware validation.</p>
+        <div class="case-metrics">
+          <div><span>95%+</span> automation</div>
+          <div><span>60%</span> faster processing</div>
+        </div>
+        <div class="case-cta">View example →</div>
+      </article>
+      <article class="case-card reveal">
+        <div class="case-tag">Shared Services</div>
+        <h3>Invoice Data Extraction at Scale</h3>
+        <p>Line-item reconciliation across quantity × unit price × amount, with tax and discount checks.</p>
+        <div class="case-metrics">
+          <div><span>99%</span> field accuracy</div>
+          <div><span>Zero</span> manual entry</div>
+        </div>
+        <div class="case-cta">View example →</div>
+      </article>
+      <article class="case-card reveal">
+        <div class="case-tag">Audit &amp; Compliance</div>
+        <h3>Traceable Validation for Regulatory Review</h3>
+        <p>Every check returns formula, operands, calculated value, reported value, and variance.</p>
+        <div class="case-metrics">
+          <div><span>100%</span> traceable</div>
+          <div><span>Audit-ready</span> outputs</div>
+        </div>
+        <div class="case-cta">View example →</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="tech" id="tech">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Technology</div>
+      <h2>Enterprise AI, Built for Scale</h2>
+      <p>A modern, modular stack — chosen so the platform can grow into production without rewrites.</p>
+    </div>
+    <div class="tech-grid">
+      <div class="tech-card reveal">
+        <div class="tech-cat">AI / ML</div>
+        <ul><li>Google Gemini (structured JSON)</li><li>Tesseract OCR</li><li>Poppler (PDF rendering)</li><li>Custom validation rules</li></ul>
+      </div>
+      <div class="tech-card reveal">
+        <div class="tech-cat">Backend</div>
+        <ul><li>FastAPI</li><li>Pydantic v2 schemas</li><li>SQLAlchemy ORM</li><li>Uvicorn ASGI</li></ul>
+      </div>
+      <div class="tech-card reveal">
+        <div class="tech-cat">Data</div>
+        <ul><li>SQLite (dev)</li><li>PostgreSQL-ready</li><li>JSONB-friendly models</li><li>Repository pattern</li></ul>
+      </div>
+      <div class="tech-card reveal">
+        <div class="tech-cat">Cloud</div>
+        <ul><li>Docker</li><li>Render</li><li>Environment-based config</li><li>Health + docs endpoints</li></ul>
+      </div>
+      <div class="tech-card reveal">
+        <div class="tech-cat">Frontend</div>
+        <ul><li>Vanilla HTML/CSS/JS</li><li>Jinja2 templating</li><li>Dashboard + Result pages</li><li>Swagger OpenAPI</li></ul>
+      </div>
+      <div class="tech-card reveal">
+        <div class="tech-cat">Quality</div>
+        <ul><li>Pytest test suite</li><li>Structured logging</li><li>Typed schemas</li><li>Clean separation of concerns</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="arch">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Architecture</div>
+      <h2>A Clean, Layered Pipeline</h2>
+    </div>
+    <div class="arch-diagram reveal">
+      <div class="arch-node">CLIENT / BROWSER</div>
+      <div class="arch-arrow">↓</div>
+      <div class="arch-node">FASTAPI REST API</div>
+      <div class="arch-arrow">↓</div>
+      <div class="arch-node">VALIDATION SERVICE</div>
+      <div class="arch-arrow">↓</div>
+      <div class="arch-node">OCR SERVICE</div>
+      <div class="arch-arrow">↓</div>
+      <div class="arch-node accent-node">LLM EXTRACTION</div>
+      <div class="arch-arrow">↓</div>
+      <div class="arch-node">FINANCIAL VALIDATION</div>
+      <div class="arch-arrow">↓</div>
+      <div class="arch-node">REPOSITORY / DB</div>
+      <div class="arch-arrow">↓</div>
+      <div class="arch-node">STRUCTURED JSON</div>
+    </div>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="container">
+    <div class="trust-head reveal">
+      <div class="eyebrow">Trust</div>
+      <h2>Trusted by teams that work with critical data</h2>
+    </div>
+    <div class="logo-row reveal">
+      <div class="logo">Northwind Capital</div>
+      <div class="logo">Aurora Bank</div>
+      <div class="logo">Vertex Holdings</div>
+      <div class="logo">Beacon Audit</div>
+      <div class="logo">Meridian Group</div>
+    </div>
+    <blockquote class="quote reveal">
+      <p>“Reliable AI is not just about accuracy. It is about building systems that organizations can trust in production.”</p>
+      <footer>— LedgerAI Engineering</footer>
+    </blockquote>
+  </div>
+</section>
+
+<section class="insights">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Insights</div>
+      <h2>Insights &amp; Intelligence</h2>
+    </div>
+    <div class="insight-grid">
+      <article class="insight reveal">
+        <div class="insight-meta"><span>Document AI</span><span>6 min read</span></div>
+        <h3>Why page-level evidence matters in document extraction</h3>
+        <p>Confidence without provenance is a liability. How we attach evidence to every extracted field.</p>
+        <a href="#">Read more →</a>
+      </article>
+      <article class="insight reveal">
+        <div class="insight-meta"><span>Validation</span><span>5 min read</span></div>
+        <h3>Financial validation is not a black box</h3>
+        <p>Every check we run returns a formula, operands, calculated value, reported value, and variance.</p>
+        <a href="#">Read more →</a>
+      </article>
+      <article class="insight reveal">
+        <div class="insight-meta"><span>Engineering</span><span>8 min read</span></div>
+        <h3>Building OCR + LLM pipelines that survive real documents</h3>
+        <p>Native text first, OCR fallback, smart heuristics, structured LLM prompts — a practical guide.</p>
+        <a href="#">Read more →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="container faq-inner">
+    <div class="section-head reveal">
+      <div class="eyebrow">FAQ</div>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list">
+      <details class="reveal"><summary>What documents can the platform process?</summary><p>Invoices, Balance Sheets, Profit &amp; Loss statements, and Cash Flow Statements — as native or scanned PDF, JPG, or PNG, up to 3 pages per document.</p></details>
+      <details class="reveal"><summary>How accurate is the AI extraction?</summary><p>Extraction combines OCR and an LLM with a strict structured-output schema. Values are traceable to source text and page numbers, and validation catches any inconsistencies before they matter.</p></details>
+      <details class="reveal"><summary>How does validation work?</summary><p>Every document type has financial relationships (e.g. subtotal + tax − discount ≈ total). Checks return formula, operands, calculated value, reported value, variance, and PASS / FAIL / NOT_APPLICABLE status.</p></details>
+      <details class="reveal"><summary>Can the platform integrate with existing systems?</summary><p>Yes. Everything is exposed through a consistent REST API: multipart upload, GET by document name, list, and health endpoints. Responses are predictable JSON.</p></details>
+      <details class="reveal"><summary>Is there a REST API?</summary><p>Yes — documented via Swagger / OpenAPI at <code>/docs</code>. Four core endpoints plus health: process, get-by-name, list, and health check.</p></details>
+      <details class="reveal"><summary>How is sensitive data protected?</summary><p>Secrets are read from environment variables and never committed. Uploads are validated, files are handled safely, and errors are sanitized to avoid leaking internal details.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container cta-inner reveal">
+    <h2>Ready to Turn Data Into Intelligence?</h2>
+    <p>Build reliable AI workflows that extract, validate, and operationalize information at enterprise scale.</p>
+    <div class="cta-buttons">
+      <a href="/dashboard" class="btn btn-primary">Launch Dashboard</a>
+      <a href="/docs" class="btn btn-ghost">Explore the API</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <div class="brand">
+        <span class="brand-mark">◆</span>
+        <span class="brand-name">LedgerAI</span>
+      </div>
+      <p>Enterprise document intelligence for financial services, audit, and shared services teams.</p>
+    </div>
+    <div>
+      <h4>Solutions</h4>
+      <ul>
+        <li><a href="#solutions">Document Intelligence</a></li>
+        <li><a href="#solutions">AI Validation</a></li>
+        <li><a href="#solutions">Financial Intelligence</a></li>
+        <li><a href="#solutions">Analytics</a></li>
+        <li><a href="#solutions">Automation</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Platform</h4>
+      <ul>
+        <li><a href="/dashboard">Dashboard</a></li>
+        <li><a href="/docs" target="_blank">API Documentation</a></li>
+        <li><a href="/api/v1/health" target="_blank">Health Check</a></li>
+        <li><a href="#how">How it Works</a></li>
+        <li><a href="#tech">Technology</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Case Studies</a></li>
+        <li><a href="https://www.linkedin.com/in/srishti-kumari-335b67252" target="_blank">LinkedIn</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 LedgerAI. All rights reserved.</span>
+    <div class="footer-links">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+    </div>
+  </div>
+</footer>
+
+<script src="/static/js/landing.js"></script>
+</body>
+</html>

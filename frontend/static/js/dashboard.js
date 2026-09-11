@@ -1,4 +1,4 @@
-﻿const API_BASE = "";
+const API_BASE = "";
 
 const form = document.getElementById("uploadForm");
 const fileInput = document.getElementById("fileInput");
@@ -35,7 +35,7 @@ function renderDocs(docs) {
       <td>${escapeHtml(d.document_type)}</td>
       <td><span class="badge ${d.processing_status}">${d.processing_status}</span></td>
       <td>${new Date(d.processed_at).toLocaleString()}</td>
-      <td><a href="/result/${encodeURIComponent(d.document_name)}">View â†’</a></td>
+      <td><a href="/result/${encodeURIComponent(d.document_name)}">View &rarr;</a></td>
     </tr>
   `).join("");
 }
